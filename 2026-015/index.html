@@ -32,8 +32,8 @@
   <section class="card">
     <h2>入户防盗门（关门）</h2>
     <img-comparison-slider class="slider">
-      <img slot="first" src="assets/p0_before.jpg" alt="改色前" loading="lazy" decoding="async">
-      <img slot="second" src="assets/p0_after.jpg" alt="改色后" loading="lazy" decoding="async">
+      <img slot="first" src="assets/p0_before.jpg" data-webp="assets/p0_before.webp" alt="改色前" decoding="async">
+      <img slot="second" src="assets/p0_after.jpg" data-webp="assets/p0_after.webp" alt="改色后" decoding="async">
       <div slot="first" class="tag tag-before">改色前</div>
       <div slot="second" class="tag tag-after">改色后</div>
     </img-comparison-slider>
@@ -42,8 +42,8 @@
   <section class="card">
     <h2>入户防盗门（开门）</h2>
     <img-comparison-slider class="slider">
-      <img slot="first" src="assets/p1_before.jpg" alt="改色前" loading="lazy" decoding="async">
-      <img slot="second" src="assets/p1_after.jpg" alt="改色后" loading="lazy" decoding="async">
+      <img slot="first" src="assets/p1_before.jpg" data-webp="assets/p1_before.webp" alt="改色前" decoding="async">
+      <img slot="second" src="assets/p1_after.jpg" data-webp="assets/p1_after.webp" alt="改色后" decoding="async">
       <div slot="first" class="tag tag-before">改色前</div>
       <div slot="second" class="tag tag-after">改色后</div>
     </img-comparison-slider>
@@ -52,8 +52,8 @@
   <section class="card">
     <h2>厨房橱柜 + 台面（改装中补拍，非同一机位）</h2>
     <img-comparison-slider class="slider">
-      <img slot="first" src="assets/p2_before.jpg" alt="改色前" loading="lazy" decoding="async">
-      <img slot="second" src="assets/p2_after.jpg" alt="改色后" loading="lazy" decoding="async">
+      <img slot="first" src="assets/p2_before.jpg" data-webp="assets/p2_before.webp" alt="改色前" decoding="async">
+      <img slot="second" src="assets/p2_after.jpg" data-webp="assets/p2_after.webp" alt="改色后" decoding="async">
       <div slot="first" class="tag tag-before">改色前</div>
       <div slot="second" class="tag tag-after">改色后</div>
     </img-comparison-slider>
@@ -61,5 +61,11 @@
   </section></main>
 <footer><p><span class="swatch">SK DK153 胡桃木色</span><span class="swatch">SK DS020 黑色</span></p>
 <p>施工：家具贴膜改色 · 深圳市 · 图片均为现场实拍</p></footer>
+<script>
+(function(){var t=new Image();t.onload=t.onerror=function(){
+  if(t.height===2){document.querySelectorAll("img[data-webp]").forEach(
+    function(el){el.src=el.getAttribute("data-webp");});}};
+  t.src="data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=";})();
+</script>
 <script defer src="assets/slider.js"></script>
 </body></html>
